@@ -1,38 +1,57 @@
 {
-  "name": "gulp-compile-handlebars",
+  "name": "@ziflow/gulp-compile-handlebars",
   "version": "0.6.0",
   "description": "Compile Handlebars templates to file - gulp plugin",
   "license": "MIT",
-  "repository": "kaanon/gulp-compile-handlebars",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziflow/gulp-compile-handlebars.git"
+  },
+  "homepage": "https://github.com/ziflow/gulp-compile-handlebars#readme",
+  "bugs": {
+    "url": "https://github.com/ziflow/gulp-compile-handlebars/issues"
+  },
   "author": {
-    "name": "Kaanon MacFarlane",
+    "name": "Kaanon MacFarlane & Team@Ziflow",
     "email": "kaanonm@gmail.com",
     "url": "http://kaanon.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "release-it",
+    "prepublishOnly": "npm test"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "changelog"
   ],
   "keywords": [
     "gulp",
-    "handlebars",
+    "gulpplugin",
     "gulp-plugin",
+    "handlebars",
     "template",
     "compile",
     "html",
-    "rendering"
+    "rendering",
+    "mustache",
+    "hbs"
   ],
   "dependencies": {
-    "gulp-util": "^3.0.3",
-    "through2": "^0.6.3",
-    "handlebars": ">=3.0.0"
+    "handlebars": "^4.7.8",
+    "plugin-error": "^2.0.1",
+    "through2": "^4.0.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "^11.7.5",
+    "release-it": "^19.0.3",
+    "vinyl": "^3.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
