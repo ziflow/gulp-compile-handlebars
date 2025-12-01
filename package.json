@@ -1,6 +1,6 @@
 {
   "name": "@ziflow/gulp-compile-handlebars",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Compile Handlebars templates to file - gulp plugin",
   "license": "MIT",
   "main": "index.js",
